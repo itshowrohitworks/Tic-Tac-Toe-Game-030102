@@ -1,7 +1,3 @@
-Sure, let me first take a look at your project. I'll load the file and review the contents.
-
-Based on your Tic Tac Toe project, here's a description highlighting the features you've implemented:
-
 ### Tic Tac Toe Python Project
 
 This project implements a classic Tic Tac Toe game using Python. The game features the following functionalities:

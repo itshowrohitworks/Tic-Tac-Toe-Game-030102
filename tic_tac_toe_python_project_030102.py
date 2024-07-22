@@ -54,7 +54,7 @@ def player_input():
     else:
         return ('X', 'O')
 
-**Now we will test it for the second time by making sure we get the desired output.**"""
+**Now we will test it for the second time by making sure we get the desired output.**
 
 player_input()
 
@@ -66,7 +66,7 @@ player_input()
 def place_marker(board, marker , position):
     board[position] = marker
 
-**Now we will test our program for the third time to test the parameters and display are working fine or not.**"""
+**Now we will test our program for the third time to test the parameters and display are working fine or not.**
 
 place_marker(test_board,'R',8)
 display_board(test_board)
@@ -94,11 +94,11 @@ def win_check(board,mark):
     (board[7] == mark and board[5] == mark and board[3] == mark) or # diagonal
     (board[9] == mark and board[5] == mark and board[1] == mark)) # diagonal
 
-**Now we test our program for the forth time to run the win_check function against our test_board - it should return True**"""
+**Now we test our program for the forth time to run the win_check function against our test_board - it should return True**
 
 win_check(test_board,"X")
 
-**Now I created a function that uses the random module to randomly decide which player goes first. You may want to lookup random.randint() Return a string of which player went first.**"""
+**Now I created a function that uses the random module to randomly decide which player goes first. You may want to lookup random.randint() Return a string of which player went first.**
 
 import random
 
@@ -108,7 +108,7 @@ def choose_first():
     else:
         return 'Player 1'
 
-**Now I created a function that returns a boolean indicating whether a space on the board is freely available.**"""
+**Now I created a function that returns a boolean indicating whether a space on the board is freely available.**
 
 def space_check(board, position):
 
@@ -125,7 +125,7 @@ def full_board_check(board):
             return False
     return True
 
-**Now I created a function that asks for a player's next position (as a number 1-9) and then uses the function from step 6 to check if its a free position. If it is, then return the position for later use.**"""
+**Now I created a function that asks for a player's next position (as a number 1-9) and then uses the function from step 6 to check if its a free position. If it is, then return the position for later use.**
 
 def player_choice(board):
     position = 0
@@ -135,7 +135,7 @@ def player_choice(board):
 
     return position
 
-**Now I created a function that asks the player if they want to play again and returns a boolean True if they do want to play again.**"""
+**Now I created a function that asks the player if they want to play again and returns a boolean True if they do want to play again.**
 
 def replay():
 
@@ -204,7 +204,6 @@ while True:
     if not replay():
         break
 
-"""**Hence, This is the simple user-interactive "Tic Tac Toe Game" I created using the Python Interface on Jupyter Notebook.**
+**Hence, This is the simple user-interactive "Tic Tac Toe Game" I created using the Python Interface on Jupyter Notebook.**
 
 # Thank you for looking at this Game NoteBook I appreciate your precious time.
-"""
